@@ -1,0 +1,47 @@
+.heart-box {
+   visibility: hidden;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   width: 35px;
+   height: 35px;
+   overflow: hidden;
+   border: 1px solid #444;
+   border-radius: 50%;
+   background: #fff;
+   margin: 5px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   cursor: pointer;
+}
+
+.heart-box:active {
+   transform: scale(0.94)
+}
+
+.heart {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   background: url("../../../public/heart.png") no-repeat;
+   background-position: left;
+   background-size: 2900%;
+   transform: scale(2);
+}
+
+
+.heart-active {
+   animation: animateHeart .8s steps(28) 1;
+   background-position: right;
+}
+
+@keyframes animateHeart {
+   0% {
+      background-position: left;
+   }
+
+   100% {
+      background-position: right;
+   }
+}

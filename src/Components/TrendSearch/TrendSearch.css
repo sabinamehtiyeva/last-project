@@ -1,0 +1,58 @@
+.main-page h3 {
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.trend-search {
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.trend-item {
+   padding: 0 10px;
+}
+
+.trend-item h6 {
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.trend-gif {
+   height: 100px;
+   border-radius: 5px;
+   background-size: cover;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   transition: 0.2s;
+   opacity: 1;
+}
+
+.trend-gif:active {
+   transform: scale(0.98);
+}
+
+.trend-gif:hover {
+   /* sonra bax */
+   opacity: 0.95;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.next-arrow {
+   display: block;
+   position: absolute;
+   right: -25px;
+   top: 32px;
+   cursor: pointer;
+}
+
+.prev-arrow {
+   display: block;
+   position: absolute;
+   left: -25px;
+   top: 32px;
+   cursor: pointer;
+}
+
+.next-arrow:hover,
+.prev-arrow:hover {
+   opacity: 0.7;
+}

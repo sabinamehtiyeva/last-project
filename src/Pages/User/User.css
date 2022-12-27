@@ -1,0 +1,73 @@
+.user-page .user-header {
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   position: relative;
+   padding-bottom: 60px;
+   margin-bottom: 30px;
+}
+
+.user-page .color-palette {
+   background-color: #52a7c1;
+   background-image: linear-gradient(315deg, #52a7c1 0%, #95e5c1 74%);
+
+   position: relative;
+   top: -30px;
+   height: 400px;
+}
+
+.user-header .container {
+   position: relative;
+}
+
+.user-page .profile-section {
+   display: flex;
+   position: absolute;
+   align-items: flex-end;
+   bottom: -45px;
+}
+
+.user-page .photo {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 700;
+   background-color: #52a7c1;
+   background-image: linear-gradient(315deg, #52a7c1 0%, #86d7b3 74%);
+   color: #fff;
+   position: relative;
+}
+
+.user-page .name {
+   font-size: 24px;
+   font-weight: 600;
+   opacity: 0.9;
+   margin-left: 20px;
+   position: relative;
+   top: -20px;
+}
+
+.favorites h2 {
+   margin-bottom: 20px;
+}
+
+@media (max-width: 996px) {
+   .user-page .color-palette {
+      height: 350px;
+   }
+}
+
+@media (max-width: 780px) {
+   .user-page .profile-section {
+      bottom: -30px
+   }
+   
+   .user-page .photo {
+      width: 120px;
+      height: 120px;
+   }
+}

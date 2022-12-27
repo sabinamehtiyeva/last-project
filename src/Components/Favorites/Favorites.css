@@ -1,0 +1,21 @@
+.no-results {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 600px;
+   border: 2px dashed #333;
+   margin-bottom: 50px;
+   font-size: 30px;
+   font-weight: 300;
+   font-style: italic;
+   position: relative;
+}
+
+.no-results img {
+   z-index: -10;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   color: #fff;
+}

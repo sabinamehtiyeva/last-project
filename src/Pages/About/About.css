@@ -1,0 +1,291 @@
+.about-page .intro-part {
+   background: linear-gradient(272deg, #1bb5b5, #3dd1d1);
+   background-size: 200% 200%;
+   animation: AnimationNameA 15s ease infinite;
+   box-shadow: 0 0 2px #008080;
+   margin-bottom: 30px;
+}
+
+@keyframes AnimationNameA {
+   0% {
+      background-position: 0% 50%
+   }
+
+   50% {
+      background-position: 100% 50%
+   }
+
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+.about-page .intro-part .container {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.about-page .intro-part .left-box {
+   width: 30%;
+   color: #fff;
+}
+
+.left-box .intro {
+   text-align: center;
+   font-size: 20px;
+   line-height: 120%;
+   margin-bottom: 20px;
+}
+
+.left-box .status {
+   display: flex;
+   justify-content: space-around;
+}
+
+.left-box .status div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.left-box .status .user-num span:first-child,
+.left-box .status .searches-num span:first-child {
+   font-size: 30px;
+   text-align: center;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.left-box .status .user-num span:last-child,
+.left-box .status .searches-num span:last-child {
+   font-size: 15px;
+   text-align: center;  
+}
+
+.about-page .intro-part .right-box {
+   width: auto;
+   height: 450px;
+   margin-top: 10px;
+}
+
+.about-page .intro-part .right-box img {
+   width: 100%;
+   height: 100%;
+}
+
+/* talking about */
+
+.talking-about {
+   margin-bottom: 50px;
+}
+
+.talking-about h3 {
+   text-align: center;
+   font-size: 35px;
+   font-weight: 500;
+   color: #089b9b;
+   margin-bottom: 30px;
+}
+
+.talking-about .cards {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: auto auto;
+   justify-content: center;
+}
+
+.talking-about .card {
+   text-decoration: none;
+   justify-self: center;
+   width: 90%;
+   height: 200px;
+   background-color: #fff;
+   align-items: center;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 2px;
+}
+
+.talking-about .card p {
+   height: 80%;
+   border-bottom: 2px solid #bbb;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   color: #555;
+   font-weight: 500;
+   text-align: center;
+}
+
+.talking-about .card img {
+   display: block;
+   height: 24px;
+   margin-top: 15px;
+}
+
+/* meet team */
+
+.meet-team {
+   padding: 50px;
+   background: linear-gradient(272deg, #1bb5b5, #3dd1d1);
+   background-size: 200% 200%;
+   animation: AnimationNameA 15s ease infinite;
+   box-shadow: 0 0 2px #008080;
+   color: #fff;
+}
+
+.meet-team .container {
+   display: flex;
+   gap: 40px;
+}
+
+.meet-team .left-box {
+   width: 420px;
+   height: 300px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.meet-team .right-box {
+   position: relative;
+   flex: 1;
+}
+
+.meet-team .left-box img {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+}
+
+.meet-team .right-box h3 {
+   font-size: 35px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+.meet-team .right-box p {
+   font-size: 20px;
+   max-width: 600px;
+   line-height: 135%;
+   margin-bottom: 40px;
+   font-style: italic;
+   font-weight: 300;
+}
+
+.c {
+   font-size: 14px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+@media (max-width: 930px) {
+   .about-page .intro-part .container {
+      flex-direction: column;
+      padding-top: 40px;
+   }
+
+   .about-page .intro-part .left-box {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+
+   .about-page .intro-part .right-box {
+      width: auto;
+      height: auto;
+   }
+
+   /* talking about */
+
+   .talking-about h3 {
+      font-size: 30px;
+   }
+
+   .talking-about .card img {
+      height: 20px;
+   }
+
+   .talking-about .cards {
+      grid-template-columns: auto;
+      width: 100%;
+   }
+
+   .talking-about .card {
+      font-size: 18px;
+      width: 100%;
+   }
+
+   .meet-team .left-box {
+      width: 320px;
+      height: 240px;
+   }
+
+   .meet-team .right-box h3 {
+      font-size: 30px;
+   }
+
+   .meet-team .right-box p {
+      max-width: 100%;
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 760px) {
+
+   .meet-team .left-box {
+      display: none;
+   }
+
+   .meet-team .right-box h3 {
+      text-align: center;
+   }
+
+   .meet-team .right-box {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .meet-team .right-box p {
+      font-size: 15px;
+   }
+
+   .c {
+      font-size: 11px;
+   }
+}
+
+@media (max-width: 480px) {
+   .left-box .intro {
+      font-size: 18px;
+   }
+
+   .left-box .status .user-num span:first-child, 
+   .left-box .status .searches-num span:first-child {
+      font-size: 26px;
+   } 
+
+   .left-box .status .user-num span:last-child, 
+   .left-box .status .searches-num span:last-child {
+      font-size: 12px;
+   }
+
+   .talking-about h3 {
+      font-size: 25px;
+   }
+
+   .talking-about .card p {
+      font-size: 18px;
+   }
+
+   .talking-about .card img {
+      height: 17px;
+   }
+
+   .meet-team .right-box h3 {
+      font-size: 25px;
+   }
+}

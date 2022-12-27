@@ -1,0 +1,9 @@
+.main-page h2 {
+   font-size: 35px;
+   text-transform: capitalize;
+}
+
+.main-page h3 {
+   font-size: 25px;
+   margin-bottom: 20px;
+}

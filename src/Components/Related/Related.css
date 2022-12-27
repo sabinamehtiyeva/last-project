@@ -1,0 +1,44 @@
+@media (max-width: 1220px) {
+   .related-gifs .gif {
+      transform: scale(0.9) !important;
+   }
+
+   .related-gifs .my-masonry-grid_column>div {
+      margin-bottom: 10px;
+   }
+}
+
+@media (max-width: 830px) {
+   .related-gifs .gif {
+      transform: scale(0.8) !important;
+   }
+
+   .related-gifs .my-masonry-grid_column>div {
+      margin-bottom: 10px;
+   }
+
+   .related-gifs {
+      width: 100%;
+   }
+
+   .related-gifs .my-masonry-grid_column {
+      padding-left: 0;
+      width: 220px !important;
+   }
+
+   .related-gifs .my-masonry-grid {
+      justify-content: center;
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 500px) {
+   .related-gifs .my-masonry-grid_column {
+      width: 250px !important;
+   }
+
+   .related-gifs .gif {
+      /* transform: scale(1) !important; */
+      width: 300px !important;
+   }
+}

@@ -1,0 +1,50 @@
+.gif-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+.gif {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   width: 250px;
+   cursor: pointer;
+   margin-bottom: 20px;
+   transition: 300ms;
+   position: relative;
+}
+
+@media (max-width: 900px) {
+   .gif {
+      transform: scale(0.9);
+      width: 240px !important;
+   }
+
+   .my-masonry-grid_column {
+      width: 230px !important;
+   }
+}
+
+.gif:hover {
+   transform: scale(1.01);
+}
+
+.gif:active {
+   transform: scale(0.98);
+}
+
+.gif:hover .heart-box {
+   visibility: visible;
+}
+
+.gif .item-img {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+}
+
+@media (max-width:540px) {
+   .gif {
+      transform: scale(0.9);
+      width: 300px !important;
+      height: 110% !important;
+   }
+}

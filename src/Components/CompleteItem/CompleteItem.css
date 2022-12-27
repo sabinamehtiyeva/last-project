@@ -1,0 +1,29 @@
+.autocomplete {
+   position: absolute;
+   list-style: none;
+   background: #fff;
+   color: #000;
+   top: 104%;
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.complete-item {
+   display: flex;
+   gap: 2px;
+   align-items: center;
+   padding: 7px 10px;
+   cursor: pointer;
+   transition: 0.3s;
+   
+}
+
+.complete-item:hover {
+   background-color: #eee;
+}
+
+.complete-item p {
+   font-size: 17px;
+   position: relative;
+   top: -3px;
+}

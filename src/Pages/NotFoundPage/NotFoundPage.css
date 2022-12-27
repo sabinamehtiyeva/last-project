@@ -1,0 +1,133 @@
+/* .sky h2 span {
+   display: inline-block;
+   animation: animate 2s ease-in-out infinite;
+}
+
+.sky h2 span:nth-child(2) {
+   animation-delay: -1s;
+}
+
+@keyframes animate {
+   0%, 100% {
+      transform: translateY(-50px);
+   }
+   50% {
+      transform: translateY(50px);
+   }
+} */
+
+.error-page .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #fff;
+   margin-top: 40px;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-page .content {
+   padding: 40px;
+   max-width: 600px;
+   text-align: center;
+}
+
+.content h2.header {
+   font-size: 15em;
+   line-height: 1em;
+   margin-bottom: 40px;
+   position: relative;
+   user-select: none;
+}
+
+
+
+.content h2.header:after {
+   position: absolute;
+   content: attr(data-text);
+   top: 0;
+   left: 0;
+   right: 0;
+   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+   background-size: 400%;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+   animation: animateError 10s ease-in-out infinite;
+}
+
+@keyframes animateError {
+   0% {
+      background-position: 0 0;
+   }
+
+   25% {
+      background-position: 100% 0;
+   }
+
+   50% {
+      background-position: 100% 100%;
+   }
+
+   75% {
+      background-position: 0% 100%;
+   }
+
+   100% {
+      background-position: 0% 0%;
+   }
+}
+
+.content h4 {
+   font-size: 1.5em;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   color: #000;
+   font-size: 2em;
+   max-width: 600px;
+   position: relative;
+}
+
+.content h4:after {
+   position: absolute;
+   content: attr(data-text);
+   top: 0;
+   left: 0;
+   right: 0;
+   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.content p {
+   font-size: 1.2em;
+   color: #0d0d0d;
+   margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+   .content h2.header{
+      font-size: 10em;
+   }
+
+   .content h4 {
+      font-size: 1.2em;
+   }
+
+   .content p {
+   font-size: 1em;
+   }
+}
+
+@media (max-width: 420px) {
+   .content h2.header{
+      font-size: 7em;
+   }
+
+   .content h4 {
+      font-size: 1em;
+   }
+
+   .content p {
+   font-size: 0.8em;
+   }
+}
